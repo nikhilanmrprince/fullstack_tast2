@@ -7,7 +7,7 @@ import ManagePage from './pages/ManagePage.jsx';
 import FavoritesPage from './pages/FavoritesPage.jsx';
 
 export default function App() {
-  const [images, setImages] = useLocalStorage('gallery-images-v2', initialImages);
+  const [images, setImages] = useLocalStorage('gallery-images-v3', initialImages);
 
   const addImage = (data) =>
     setImages((prev) => [{ ...data, id: Date.now(), favorite: false }, ...prev]);
